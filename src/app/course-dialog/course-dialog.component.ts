@@ -8,6 +8,7 @@ import { throwError } from 'rxjs';
 import { CoursesService } from '../services/courses.service';
 import { LoadingService } from '../loading/loading.service';
 import { MessagesService } from '../messages/messages.service';
+import { CoursesStore } from '../services/courses.store';
 
 @Component({
   selector: 'course-dialog',
@@ -28,6 +29,7 @@ export class CourseDialogComponent implements AfterViewInit {
     private fb: FormBuilder,
     private dialogRef: MatDialogRef<CourseDialogComponent>,
     @Inject(MAT_DIALOG_DATA) course: Course,
+    private coursesStore: CoursesStore,
     private coursesService: CoursesService,
     private loadingService: LoadingService,
     private messagesService: MessagesService) {
