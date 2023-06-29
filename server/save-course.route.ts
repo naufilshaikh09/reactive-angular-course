@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import { COURSES } from "./db-data";
 import { setTimeout } from 'timers';
 
-
 export function saveCourse(req: Request, res: Response) {
 
   /*
@@ -31,7 +30,4 @@ export function saveCourse(req: Request, res: Response) {
     res.status(200).json(COURSES[id]);
 
   }, 2000);
-
-
-
 }
