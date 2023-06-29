@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
-
 import { Router } from '@angular/router';
 import { AuthStore } from '../services/auth.store';
 
@@ -27,11 +25,9 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-
   }
 
   login() {
-
     const val = this.form.value;
     this.auth.login(val.email, val.password)
       .subscribe(

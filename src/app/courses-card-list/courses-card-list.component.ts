@@ -38,6 +38,5 @@ export class CoursesCardListComponent implements OnInit {
         filter(val => !!val),
         tap(() => this.coursesChanged.emit())
       ).subscribe();
-
   }
 }

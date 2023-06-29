@@ -10,5 +10,4 @@ export class LessonComponent {
 
   @Input()
   lesson: Lesson;
-
 }

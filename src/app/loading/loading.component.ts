@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { LoadingService } from './loading.service';
 
 @Component({
@@ -8,15 +7,9 @@ import { LoadingService } from './loading.service';
   styleUrls: ['./loading.component.css']
 })
 export class LoadingComponent implements OnInit {
-
-
   constructor(public loadingService: LoadingService) {
-
   }
 
   ngOnInit() {
-
   }
-
-
 }
